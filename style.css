@@ -1,13 +1,27 @@
+:root {
+  --titles: #ff6a28;
+  --text2: #61656d;
+  --background: #ffffff;
+  --background2: #f0f0f0;
+}
+
 body {
-  background-color: #f0f0f0;
+  background-color: var(--background2);
   padding: 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+.box {
+  width: 798px;
+  border-radius: 5px;
+  background-color: var(--background);
+  padding: 20px;
+  box-sizing: border-box;
+}
 
 .title {
-  color: #ff6a28;
+  color: var(--titles);
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 700;
@@ -16,8 +30,7 @@ body {
 .sub-title {
   margin-top: 8px;
   font-size: 16px;
-  color: #61656d;
-  font-weight: 400;
+  color: var(--text2);
 }
 
 .img {
@@ -25,27 +38,31 @@ body {
   margin-top: 14px;
 }
 
-.box {
-  width: 798px;
-  border-radius: 5px;
-  background-color: #ffffff;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-.mini-box {
+.info-box {
   height: 85px;
   width: 118px;
   border-radius: 5px;
-  background: #f0f0f0;
+  background: var(--background2);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
 .icon {
   width: 20px;
+}
+.info-text {
+  font-size: 14;
+  margin-top: 8px;
+  text-transform: uppercase;
+  color: var(--text2);
+}
+
+.info-strong-text {
+  text-transform: uppercase;
+  color: var(--titles);
+  margin-top: 6px;
+  font-size: 14px;
 }
 
 .info-wrapper {
@@ -54,33 +71,19 @@ body {
   margin-top: 10px;
 }
 
-.owner-image {
-  width: 60px;
-  height: 60px;
-}
-
 .owner-box {
   width: 238px;
   height: 85px;
-  background-color: #f0f0f0;
+  background-color: var(--background2);
   border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.info-text {
-  font-size: 14;
-  margin-top: 8px;
-  text-transform: uppercase;
-  color: #61656d;
-}
-
-.info-strong-text {
-  text-transform: uppercase;
-  color: #ff6a28;
-  margin-top: 6px;
-  font-size: 14px;
+.owner-image {
+  width: 60px;
+  height: 60px;
 }
 
 .owner-info-wrapper {
@@ -89,22 +92,15 @@ body {
   margin-left: 11px;
 }
 
-.user-strong-text {
-  color: #ff6a28;
+.owner-name {
+  color: var(--titles);
   font-size: 14px;
   font-weight: 700;
 }
 
-.user-text {
-  color: #61656d;
+.owner-info {
+  color: var(--text2);
   font-size: 14px;
-}
-
-.info-box {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 12px;
-  margin-top: 10px;
 }
 
 .ingredients-box {
@@ -128,9 +124,8 @@ body {
 }
 
 .list-item {
-  color: #61656d;
+  color: var(--text2);
   padding-bottom: 10px;
-  font-size: 14px;
 }
 
 .preparation-box {
@@ -146,11 +141,11 @@ body {
 }
 
 .secundary-title {
-  background-color: #f0f0f0;
+  background-color: var(--background2);
   padding: 8px 0;
   font-size: 16px;
   text-transform: uppercase;
-  color: #61656d;
+  color: var(--text2);
   text-align: center;
 }
 
@@ -159,6 +154,6 @@ body {
 }
 
 .add-info-text p {
-  color: #61656d;
+  color: var(--text2);
   font-size: 14px;
 }
